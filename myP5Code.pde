@@ -15,7 +15,7 @@ triangle(200, 104,280, 280, 128, 280);
 fill( 255, 255, 255);
 
   
-  if (answer == 1) {
+  if (answer === 1) {
     text("BE", 176, 200);
     text("YOURSELF", 159, 229); 
     text("❤️ 💕", 162, 260);
@@ -28,11 +28,34 @@ fill( 255, 255, 255);
   text("Everything is", 164,200);
   text("done for a reason",164,229);
   }
-   
+    if(mousePressed){
+  text("Flower", random (0,600), random(0,400));};
 };
-
+ if(mousePressed){
+   text(" You're the best", random (0,600), random (0,400));
+   }
 mouseClicked = function(){
   answer = round(random(1, 5));
+  
+  function mouseClicked(){
+  answer = round(random(1,5));
+  
+  fill(255);
+  textSize(14);
+  text("you're the best!", random (0, width), random(0, height))
+  }
+ var drawFlower = function (flowerX, flowerY, flowerColor) {
+ fill(flowerColor);
+ stokeweight(1);
+ storke(255, 182, 193);
+ ellipse(flowerX + 20, fishY, 13, 25);
+ ellipse(flowerX, flowerY, 40, 20);
+ 
+ fill(0, 0, 0);
+ ellipse(flowerX - 12, flower + 4, 10, 3);
+ }
+  
+  
 };
 
 

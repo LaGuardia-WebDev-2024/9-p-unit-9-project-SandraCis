@@ -39,6 +39,10 @@ var drawScene = function(){
     textSize(20);
    
    text(sceneText, 10, 375);
+   
+   if(mousePressed){
+   text(" You're the best", random (0,600), random (0,400));
+   }
 };
 
 
